@@ -5,34 +5,70 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Silvio Dias Jr">
+  <meta name="description" content="Desafio#01 - Recriando a tela de login da Gama Academy">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/style.css">
+
   <title>Black Friday | Silvio Dias</title>
 </head>
 
 <body>
   <div class="container">
     <section class="main">
+      <img id="banner" src="img/black-friday-2.jpg" alt="Banner Black Friday">
+      <h1>FALTAM APENAS</h1>
       <div class="countdown">
+        <span id="day"></span>
+        <span id="hour"></span>
+        <span id="minute"></span>
+        <span id="second"></span>
+      </div>
 
+      <div class="countdown-legend">
+        <span>Dias</span>
+        <span>Horas</span>
+        <span>Minutos</span>
+        <span>Segundos</span>
       </div>
     </section>
     <section class="form">
+      <h1>
+        Cadastre-se aqui para receber
+        as ofertas da Black Friday!
+      </h1>
       <div class="form-content">
-        <h1>
-          Cadastre-se aqui para receber
-          as ofertas do Black Friday!
-        </h1>
-        <form action="">
-          <input type="text" name="name" id="name" required>
-          <input type="email" name="email" id="email" required>
+        <p id="alert"></p>
+        <form id="form">
+          <input type="text" name="name" id="name" placeholder="Nome" required>
+          <input type="email" name="email" id="email" placeholder="Email" required>
 
           <button type="submit">Quero me cadastrar</button>
+
+          <p>
+            Ao enviar seus dados, você aceita nossa 
+            <a href="#">Política de Privacidade</a> 
+            além de receber nossas ofertas e publicidade
+            e de parceiros .
+          </p>
         </form>
       </div>
     </section>
   </div>
   <footer>
-    <p>todos os direitos reservados.</p>
+    <p>Todos os direitos reservados.</p>
+    <p>Desenvolvido por 
+      <a href="https://www.linkedin.com/in/silviodiasjr/" target="_blank">Silvio Dias</a>
+    </p>
   </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/animated.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
