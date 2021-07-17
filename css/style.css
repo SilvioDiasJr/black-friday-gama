@@ -34,9 +34,9 @@ section.main .countdown-legend {
   justify-content: center;
 }
 
-section.main .countdown span, 
+section.main .countdown span,
 section.main .countdown-legend span {
-  min-width: 120px;
+  width: 120px;
   margin: 0 10px;
   padding: 10px;
   text-align: center;
@@ -150,5 +150,41 @@ footer a {
 @media (max-width: 768px) {
   section.main img {
     width: 400px;
+  }
+
+  section.main .countdown span,
+  section.main .countdown-legend span {
+    width: 90px;
+    font-size: 3rem;
+  }
+
+  section.main .countdown-legend span {
+    font-size: 1rem;
+  }
+
+  section.form h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  section.main img {
+    width: 320px;
+  }
+
+  section.main .countdown span,
+  section.main .countdown-legend span {
+    width: 70px;
+    font-size: 2rem;
+    margin: 5px;
+  }
+
+  section.main .countdown-legend span {
+    font-size: 1rem;
+  }
+
+  section.form .form-content form{
+    width: 320px;
   }
 }
